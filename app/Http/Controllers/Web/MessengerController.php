@@ -9,6 +9,6 @@ class MessengerController extends Controller
 {
     public function example()
     {
-        
+        return 'a';
     }
 }
