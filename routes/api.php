@@ -14,11 +14,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['middleware' => 'jwt-auth'], function () {
-
-    Route::name('web.')->namespace('Web')->group(function(){
-        Route::name('example')->get('/','MessengerController@example');
-    });
-
-
-});
