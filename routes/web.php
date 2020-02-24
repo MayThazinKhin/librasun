@@ -10,3 +10,8 @@ Route::group(['middleware' => 'verify_web_hook'], function () {
 
 
 });
+//route for verification
+Route::get("/trivia", "MessengerController@receive")->middleware("verify_web_hook");
+
+//where Facebook sends messages to. No need to attach the middleware to this because the verification is via GET
+Route::post("/trivia", "MessengerController@receive");
