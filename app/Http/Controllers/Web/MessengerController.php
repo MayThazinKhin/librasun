@@ -19,7 +19,7 @@ class MessengerController extends Controller
         $id = $data["entry"][0]["messaging"][0]["sender"]["id"];
         $this->sendTextMessage($id, "Hello");
     }
-    private function sendTextMessage($recipientId, $messageText)
+    protected function sendTextMessage($recipientId, $messageText)
     {
         $messageData = [
             "recipient" => [
