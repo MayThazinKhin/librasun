@@ -11,7 +11,7 @@ class MessengerController extends Controller
     public function example()
     {
         $a = new \stdClass();
-        $a->text = 'a';
+        $a->text = 'mother fucker';
        return response()->json([
            'messages' => [
                $a
