@@ -10,7 +10,9 @@ class MessengerController extends Controller
 {
     public function example()
     {
-        return 'a';
+       return response()->json([
+           'address'=> 'a'
+       ]);
     }
 
 
