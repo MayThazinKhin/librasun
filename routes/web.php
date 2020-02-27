@@ -6,7 +6,7 @@ Route::group(['middleware' => 'verify_web_hook'], function () {
 
     Route::namespace('Web')->group(function(){
         //route for verification
-        Route::get("/northern_breeze_chat_bot", "MessengerController@receive");
+        //Route::get("/northern_breeze_chat_bot", "MessengerController@receive");
 
     });
 
@@ -14,7 +14,7 @@ Route::group(['middleware' => 'verify_web_hook'], function () {
 });
 Route::namespace('Web')->group(function(){
     //where Facebook sends messages to. No need to attach the middleware to this because the verification is via GET
-    Route::post("/northern_breeze_chat_bot", "MessengerController@receive");
+    Route::get("/northern_breeze_chat_bot", "MessengerController@example");
 });
 
 
