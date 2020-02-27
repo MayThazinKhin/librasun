@@ -10,8 +10,12 @@ class MessengerController extends Controller
 {
     public function example()
     {
+        $a = new \stdClass();
+        $a->text = 'a';
        return response()->json([
-           'address'=> 'a'
+           'messages' => [
+               $a
+           ]
        ]);
     }
 
