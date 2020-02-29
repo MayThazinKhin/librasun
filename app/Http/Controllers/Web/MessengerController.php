@@ -8,19 +8,23 @@ use Illuminate\Http\Request;
 
 class MessengerController extends Controller
 {
+
+    public $branch1 = '-Main Shop- No(74)၊မနော်ဟရီလမ်း၊ ထိုင်းသံရုံးဘေး၊ ဒဂုံမြို့နယ်။';
+    public $branch2 =  '-Yankin Branch-အမှတ်(273)၊အခန်း(1)၊ရန်ကင်းလမ်းမ၊ရန်ကင်းမြို့နယ်။';
+    public $branch3 =  '-8-mile Branch-No(107/B) ၈မိုင်၊ Junction 8 ၏ အရှေ့၊ ၆ ရပ်ကွက်၊မရမ်းကုန်းမြို့နယ်။';
+    public $branch4 = '-North Okkalapa Branch -No.(355),ဝဇီရာ (၆)လမ်း.မြောက်ဉကလာပ ​မြို့နယ်.ရန်ကုန်';
     public function getBranches()
     {
-        $text = '-Main Shop- No(74)၊မနော်ဟရီလမ်း၊ ထိုင်းသံရုံးဘေး၊ ဒဂုံမြို့နယ်။'.
-        '-Yankin Branch-အမှတ်(273)၊အခန်း(1)၊ရန်ကင်းလမ်းမ၊ရန်ကင်းမြို့နယ်။'.
-        '-8-mile Branch-No(107/B) ၈မိုင်၊ Junction 8 ၏ အရှေ့၊ ၆ ရပ်ကွက်၊မရမ်းကုန်းမြို့နယ်။'.
-        '-North Okkalapa Branch -No.(355),ဝဇီရာ (၆)လမ်း.မြောက်ဉကလာပ ​မြို့နယ်.ရန်ကုန်';
+        $text = $this->branch1 ."\r\n" . $this->branch2 ."\r\n" . $this->branch3 ."\r\n" . $this->branch4
+        ;
         return $this->returnText($text);
     }
 
     public function getCurrencyValue(Request $request)
     {
         $currency_name = $request->header('currency');
-        return $this->returnText($currency_name);
+        $text = $currency_name ."\r\n" . 'Selling Value : ' . 1350 . "\r\n" . 'Buying Value : ' . 1300 ;
+        return $this->returnText($text);
     }
 
 
@@ -32,9 +36,10 @@ class MessengerController extends Controller
         $fb_name = $request->header('name');
         $messenger_id = $request->header('user_id');
         $currency = $request->header('currency');
+        $branch = $request->header('branch');
 
         $text = 'Dear '. $fb_name .', ' .'your booing number is ' . 0001 . ' for ' .$type.'ing '. $amount . ' of '
-            . $currency;
+            . $currency .' at '. $branch;
         return $this->returnText($text);
 
     }
