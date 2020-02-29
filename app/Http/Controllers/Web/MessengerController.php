@@ -10,7 +10,10 @@ class MessengerController extends Controller
 {
     public function example()
     {
-        $text = 'Shop One is ';
+        $text = '-Main Shop- No(74)၊မနော်ဟရီလမ်း၊ ထိုင်းသံရုံးဘေး၊ ဒဂုံမြို့နယ်။'.
+        '-Yankin Branch-အမှတ်(273)၊အခန်း(1)၊ရန်ကင်းလမ်းမ၊ရန်ကင်းမြို့နယ်။'.
+        '-8-mile Branch-No(107/B) ၈မိုင်၊ Junction 8 ၏ အရှေ့၊ ၆ ရပ်ကွက်၊မရမ်းကုန်းမြို့နယ်။'.
+        '-North Okkalapa Branch -No.(355),ဝဇီရာ (၆)လမ်း.မြောက်ဉကလာပ ​မြို့နယ်.ရန်ကုန်';
         return $this->returnText($text);
     }
 
