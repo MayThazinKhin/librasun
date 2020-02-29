@@ -12,39 +12,23 @@ class MessengerController extends Controller
     {
         $a = new \stdClass();
         $a->text = 'mother fucker';
-       return response()->json([
-           'messages' => [
-               $a
-           ]
-       ]);
+        return $this->returnText($a);
     }
 
-
-
-    public function receive(Request $request)
+    public function getCurrencyValue(Request $request)
     {
-        $data = $request->all();
-        //get the user’s id
-        $id = $data["entry"][0]["messaging"][0]["sender"]["id"];
-        $this->sendTextMessage($id, "Hello");
+        $currency_name = $request->header('currency');
+        $currency = new \stdClass();
+        $currency->text = $currency_name;
+        return $this->returnText($currency);
     }
-    protected function sendTextMessage($recipientId, $messageText)
+
+    protected function returnText($text)
     {
-        $messageData = [
-            "recipient" => [
-                "id" => $recipientId
-            ],
-            "message" => [
-                "text" => $messageText
+        return response()->json([
+            'messages' => [
+                $text
             ]
-        ];
-        $ch = curl_init('https://graph.facebook.com/v2.6/me/messages?access_token=' . env("PAGE_ACCESS_TOKEN"));
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HEADER, false);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($messageData));
-        curl_exec($ch);
-
+        ]);
     }
 }
