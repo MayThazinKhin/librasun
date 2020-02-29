@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class MessengerController extends Controller
 {
-    public function example()
+    public function getBranches()
     {
         $text = '-Main Shop- No(74)၊မနော်ဟရီလမ်း၊ ထိုင်းသံရုံးဘေး၊ ဒဂုံမြို့နယ်။'.
         '-Yankin Branch-အမှတ်(273)၊အခန်း(1)၊ရန်ကင်းလမ်းမ၊ရန်ကင်းမြို့နယ်။'.
