@@ -24,7 +24,7 @@ class DataSeeder extends Seeder
         }
 
         $item_name =['Espresso','BlueBerry Muffin','Cafe Latte','Hazelnut Latte','Cappuccino'];
-        $item_price = [0.00,0.00,4.00,4.00,4.00];
+        $item_price = [4.00,4.00,4.00,4.00,4.00];
 
         for($i = 0;$i <count($item_name) ;$i++){
           Item::create([

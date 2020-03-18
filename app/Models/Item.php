@@ -10,7 +10,7 @@ class Item extends Model
 
     public function modifiers()
     {
-        return $this->belongsToMany(Modifier::class);
+        return $this->belongsToMany(Modifier::class,'item_modifier');
     }
 
     public function receipt()
