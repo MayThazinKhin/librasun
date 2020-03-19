@@ -30,6 +30,7 @@ class ReceiptSaving
     }
     protected function saveReceipt($data)
     {
+
         $receipt = Receipt::create([
             'payment_type' => $data->payment_type,
             'sub_total' => $data->sub_total,

@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbcfcdad-4d88-4094-99c4-4ca63168312d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Actions/Receipt/ReceiptSaving.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/explorer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/explorer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Actions/SampleInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Actions/Receipt/SampleInput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Actions/Receipt/ReceiptSaving.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Actions/Receipt/ReceiptSaving.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Web/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Web/TransactionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Item.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DataSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DataSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/POS/pos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/POS/pos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -144,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../new" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -188,7 +183,8 @@
       <workItem from="1583857612830" duration="745000" />
       <workItem from="1584102184231" duration="16391000" />
       <workItem from="1584258504963" duration="22008000" />
-      <workItem from="1584509401608" duration="15199000" />
+      <workItem from="1584509401608" duration="15625000" />
+      <workItem from="1584580495856" duration="11692000" />
     </task>
     <servers />
   </component>
